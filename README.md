@@ -108,7 +108,12 @@ roslaunch cte_mlo mapping_mcd_prior.launch
 rosbag play ntu_day_01/ntu_day_01_mid70.bag
 ```
 *Remark:* Please wait until the terminal displays ```The Pre-build Map has been Voxelized``` before playing the rosbag.
-
+## Use Livox Lidar with sensor_msgs/PointCloud2
+We provide an example to test CTE-MLO using the Livox Lidar with the sensor_msgs/PointCloud2 message type.
+```
+source ~/ctemlo_ws/devel/setup.bash
+roslaunch cte_mlo mapping_livoxpc2.launch   
+```
 ## Acknowledgments
 This project is developed based on [FAST-LIO2](https://github.com/hku-mars/FAST_LIO), [BALM](https://github.com/hku-mars/BALM), and [X-ICP](https://sites.google.com/leggedrobotics.com/x-icp). Thanks for their excellent work!
 
